@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suiteName">
+    <test name="runAll">
+        <classes>
+            <class name="groups.GroupsOnClass1"/>
+            <class name="groups.GroupsOnClass2"/>
+            <class name="groups.GroupsOnClass3"/>
+        </classes>
+    </test>
+    <test name="onlyRunStu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="groups.GroupsOnClass1"/>
+            <class name="groups.GroupsOnClass2"/>
+            <class name="groups.GroupsOnClass3"/>
+        </classes>
+
+    </test>
+</suite>
